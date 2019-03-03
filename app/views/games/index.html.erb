@@ -2,17 +2,6 @@
 <p>Find me in app/views/games/index.html.erb</p>
 <ul>
   <% @games.each do |game| %>
-    <li>
-      <%= game.name %>
-      <ol>
-        <% game.game_sessions.each do |game_session| %>
-          <li>
-            <span><%= game_session.title %></span>
-            <br/>
-            <span><%= game_session.notes %></span>
-          </li>
-        <% end %>
-      </ol>
-    </li>
+    <%= render game %>
   <% end %>
 </ul>

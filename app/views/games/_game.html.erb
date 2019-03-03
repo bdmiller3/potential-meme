@@ -1,0 +1,8 @@
+<li>
+  <%= game.name %>
+  <ol>
+    <% game.game_sessions.each do |game_session| %>
+      <%= render game_session %>
+    <% end %>
+  </ol>
+</li>
